@@ -2,6 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Online Editor</title>
+    <style>
+        /* Add your CSS styling here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #editor {
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Python Online Editor</h1>
+    <div>
+        <label for="editor">Write your Python code:</label>
+        <textarea id="editor"></textarea>
+        <button onclick="runCode()">Run Code</button>
+        <h3>Output:</h3>
+        <pre id="output"></pre>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script>
+        // Add your JavaScript code here
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/twilight");
+        editor.getSession().setMode("ace/mode/python");
+
+        function runCode() {
+            var code = editor.getValue();
+            $.post('/run', { code: code }, function (data) {
+                $('#output').text(data);
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
@@ -70,4 +117,4 @@
 </div>
 
 </body>
-</html>
+</html> -->
