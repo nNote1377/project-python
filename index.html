@@ -8,6 +8,57 @@
     <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
 </head>
 <body>
+
+<div>
+    <div id="left-pane" class="column is-two-thirds is-flex-direction-column">
+        <div id="code-editor" data-snippet="print('Hello world!')" data-lang="python"><div class="cm-editor ͼ1 ͼ2 ͼ4 ͼ16"><div aria-live="polite" style="position: fixed; top: -10000px;"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 27.5938px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">9</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 19.5938px; margin-top: 4px;">1</div></div></div><div spellcheck="false" autocorrect="off" autocapitalize="off" translate="no" contenteditable="true" class="cm-content" style="tab-size: 4;" role="textbox" aria-multiline="true" aria-autocomplete="list" data-language="python"><div class="cm-activeLine cm-line"><span class="ͼ1b">print</span>(<span class="ͼ1d">'Hello world!'</span>)</div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms;"><div class="cm-cursor cm-cursor-primary" style="left: 27px; top: 5px; height: 17px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"></div></div></div></div>
+    </div>
+    <div id="right-pane" class="column is-one-third">
+        <div class="is-fullheight is-flex-direction-column">
+            <div class="block ">
+                <textarea id="stdin" class="textarea is-small has-fixed-size" placeholder="Wejście programu" rows="2"></textarea>
+            </div>
+            <div class="block">
+                <b>Wyjście programu</b>
+            </div>
+            <div class="block program-output is-flex-direction-column">
+                <pre class="terminal" id="output-terminal" x-html="output">(Uruchom program, aby wyświetlić jego wyjście)</pre>
+                <div :class="'overlay ' + (running ? '' : 'is-hidden')" id="progress-overlay" class="overlay is-hidden">
+                    <progress class="progress is-small" max="100"></progress>
+                </div>
+            </div>
+            <div class="block">
+                <script id="_carbonads_js" async="" type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CEBI52QI&amp;placement=wwwmycompilerio">
+                </script>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button x-data="{ loading: false, shortcut: '' }" x-init="shortcut = $store.g.shortcut('Ctrl-Enter', () => $dispatch('runprogram'))" id="run-button" :data-tooltip="shortcut" :class="'button is-primary ' + (loading ? 'is-loading' : '')" @click="$dispatch('runprogram')" @programstatechanged.window="loading = $event.detail.running" data-tooltip="Ctrl+Enter" class="button is-primary">
+<span class="icon">
+<i class="fas fa-play" aria-hidden="true"></i>
+</span>
+            <span class="is-hidden-xs">
+Uruchom
+</span>
+        </button>
+        <button x-data="{ loading: false, shortcut: '' }" x-init="shortcut = $store.g.shortcut('Ctrl-S', () => $dispatch('saveprogram'))" id="save-button" :data-tooltip="shortcut" :class="'button is-link ' + (loading ? 'is-loading' : '')" @click="$dispatch('saveprogram')" @savestatechanged.window="loading = $event.detail.running" data-tooltip="Ctrl+S" class="button is-link">
+<span class="icon">
+<i class="fas fa-floppy-disk" aria-hidden="true"></i>
+</span>
+            <span class="is-hidden-mobile">
+Zapisz
+</span>
+        </button>
+    </div>
+
+
+
+
+
+
+</div>
+
 <div class="frame-1">
     <div class="with-us-everything-is-possible-and-easy">
     <span>
