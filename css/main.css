@@ -1,31 +1,61 @@
-html,body{
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
 }
-#home-page{
+
+#home-page {
     width: 100%;
     height: 100%;
     font-family: Koulen-Regular, serif;
     background: #d0d0d0;
 }
-.left-pane{
-    width: 50%;
+
+.left-pane, .right-pane {
+    /*width: 50%;*/
+    height: 100%;
+    /*float: left;*/
+}
+
+.left-pane {
+
+    width: 60%;
     float: left;
-}
-/*Logo*/
-.logo{
-    /*float: left;*/
-    /*width: 50%;*/
-}
-.logo img{
-    /*width: 90%;*/
-    /*margin: 5%;*/
-}
-/*what we offer*/
-.what-we-offer{
-    /*width: 50%;*/
-    /*float: left;*/
     font-size: 3rem;
+    text-shadow: -1em 7px 4px rgba(0, 0, 0, 0.35), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo, .what-we-teach{
+    width: 90%;
+
+
+    padding-left: 10%;
+}
+.logo{
+    width: 50%;
+    padding-top: 5%;
+}
+.left-button{
+    background: #ffffff;
+    border-radius: 1rem;
+    height: 15%;
+    width: 20%;
+    box-shadow: 0rem 4rem 4rem 0rem rgba(0, 0, 0, 0.45);
+    color: #000000;
+    text-align: center;
+    font-family: "Koulen-Regular", sans-serif;
+    font-size: 2rem;
+    /*font-weight: 400;*/
+
+}
+.right-pane {
+    float: right;
+    width: 40%;
+
+    font-size: 2rem;
+    text-align: center;
+}
+.right-pane-content{
+    margin: auto;
 }
