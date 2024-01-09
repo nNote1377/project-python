@@ -26,8 +26,10 @@ html, body {
     text-shadow: 0 7px 4px rgba(0, 0, 0, 0.35), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+
 .logo, .what-we-teach{
     /*width: 90%;*/
+
 
 }
 .logo{
@@ -51,10 +53,17 @@ html, body {
 .right-pane {
     float: right;
     width: 40%;
+    margin-top: 5%;
 
-    font-size: 2rem;
-    text-align: center;
+
 }
 .right-pane-content{
-    margin: auto;
+
+    background-color: white;
+    border-radius: 15px;
+    font-size: 2.5rem;
+    text-align: left;
+    height: fit-content;
+    width: fit-content;
+    padding: 5% 15%;
 }
