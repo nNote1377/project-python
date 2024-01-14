@@ -11,24 +11,18 @@ html, body {
     font-family: Koulen-Regular, serif;
     background: #d0d0d0;
 }
-.logo img{
+
+.logo img {
     width: 50%;
     padding-top: 1%;
 }
-/*
+
 .left-pane {
-    margin-left: 5%;
     width: 50%;
     float: left;
-    font-size: 3rem;
     text-shadow: 0 7px 4px rgba(0, 0, 0, 0.35), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
-.logo {
-    width: 50%;
-    padding-top: 5%;
-}
 
 .left-button {
     margin: 5% 0 0 0;
@@ -41,11 +35,18 @@ html, body {
     text-align: center;
     font-family: "Koulen-Regular", sans-serif;
     font-size: 2rem;
-    !*font-weight: 400;*!
+    font-weight: 400;
 
 }
-
-.right-pane {
+.button-creator {
+    color: #000000;
+    text-align: left;
+    font-family: "Koulen-Regular", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+}
+/*.right-pane {
     float: right;
     width: 40%;
     margin-top: 5%;
@@ -62,5 +63,5 @@ html, body {
     height: fit-content;
     width: fit-content;
     padding: 5% 15%;
-}
-*/
+}*/
+
