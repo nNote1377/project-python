@@ -11,15 +11,13 @@ html, body {
     font-family: Koulen-Regular, serif;
     background: #d0d0d0;
 }
-
-.left-pane, .right-pane {
-    /*width: 50%;*/
-    height: 100%;
-    /*float: left;*/
+.logo img{
+    width: 50%;
+    padding-top: 1%;
 }
-
+/*
 .left-pane {
-   margin-left: 5%;
+    margin-left: 5%;
     width: 50%;
     float: left;
     font-size: 3rem;
@@ -27,16 +25,12 @@ html, body {
 }
 
 
-.logo, .what-we-teach{
-    /*width: 90%;*/
-
-
-}
-.logo{
+.logo {
     width: 50%;
     padding-top: 5%;
 }
-.left-button{
+
+.left-button {
     margin: 5% 0 0 0;
     background: #ffffff;
     border-radius: 1rem;
@@ -47,9 +41,10 @@ html, body {
     text-align: center;
     font-family: "Koulen-Regular", sans-serif;
     font-size: 2rem;
-    /*font-weight: 400;*/
+    !*font-weight: 400;*!
 
 }
+
 .right-pane {
     float: right;
     width: 40%;
@@ -57,7 +52,8 @@ html, body {
 
 
 }
-.right-pane-content{
+
+.right-pane-content {
 
     background-color: white;
     border-radius: 15px;
@@ -67,3 +63,4 @@ html, body {
     width: fit-content;
     padding: 5% 15%;
 }
+*/
