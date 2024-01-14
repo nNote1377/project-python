@@ -14,14 +14,11 @@ html, body {
 
 .logo img {
     width: 25%;
-    padding-top: 1%;
-    padding-left: 1%;
+    
 }
 
 .content{
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    padding: 1%;
     font-size: 3rem;
     display: flex;
 }
@@ -33,26 +30,33 @@ html, body {
 }
 .right-pane {
     width: 50%;
-    float: right;
     text-shadow: 0 7px 4px rgba(0, 0, 0, 0.35), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-    background-color: #ffffff;
-    /* width: fit-content; */
-    /* padding: 3%; */
-    /* border-radius: 3%; */
-    
+    float: left;
 }
-
-
+.right-pane p{
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    border-radius: 3%;
+    padding: 1%;
+    margin: auto;
+}
+.right-pane span{
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    border-radius: 3%;
+    padding: 1%;
+}
+/* 
 .buttons{
     width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
-   
-}
+} */
 
-.left-button {
+/* .left-button {
     margin: 5% 0 0 0;
     background: #ffffff;
     border-radius: 1rem;
@@ -65,12 +69,12 @@ html, body {
     font-size: 2rem;
     font-weight: 400;
 
-}
+} */
 .button-creator {
     color: #000000;
     text-align: left;
     font-family: "Koulen-Regular", sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 400;
     position: relative;
 }

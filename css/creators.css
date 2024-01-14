@@ -1,0 +1,40 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Koulen-Regular, serif;
+}
+#content{
+    width: 100%;
+    height: 100%;
+    background: #d0d0d0;
+}
+.content{
+    margin: auto;
+    padding: 1%;
+    font-size: 3rem;
+    display: flex;
+
+}
+
+.top-text{
+    margin: auto;
+    text-align: center;
+}
+
+table{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.button-creator {
+    color: #000000;
+    text-align: left;
+    font-family: "Koulen-Regular", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+}

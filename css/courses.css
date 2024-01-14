@@ -1,0 +1,28 @@
+div{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}
+#main{
+    display: grid;
+    grid-template-areas: "python cc ccc"
+                         "java hcj sth";
+}
+#a1{
+    grid-area: python;
+}
+#a2{
+    grid-area: cc;
+}
+#a3{
+    grid-area: ccc;
+}
+#a4{
+    grid-area: java;
+}
+#a5{
+    grid-area: hcj;
+}
+#a6{
+    grid-area: sth;
+}
