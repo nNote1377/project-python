@@ -1,28 +1,33 @@
 div{
     border: 1px solid black;
-    height: 100px;
-    width: 100px;
 }
 #main{
+    width: 100%;
+    height: 100%;
     display: grid;
-    grid-template-areas: "python cc ccc"
+    grid-template-areas: "pajtonBLYAT cepe siszarp"
                          "java hcj sth";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
-#a1{
-    grid-area: python;
+img{
+    width: 30%;
 }
-#a2{
-    grid-area: cc;
+#pajtonBLYAT{
+    grid-area: pajtonBLYAT;
 }
-#a3{
-    grid-area: ccc;
+#cepe{
+    grid-area: cepe;
 }
-#a4{
+#siszarp{
+    grid-area: siszarp;
+}
+#java{
     grid-area: java;
 }
-#a5{
+#hcj{
     grid-area: hcj;
 }
-#a6{
+#smth{
     grid-area: sth;
 }
