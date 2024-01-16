@@ -1,56 +1,42 @@
+
 <!doctype html>
-
-<html>
+<html lang="en">
     <head>
-        <!-- Recommended meta tags -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-        <!-- PyScript CSS -->
-        <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
-        <!-- CSS for examples -->
+        <title>REPL</title>
+
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <link
+            rel="stylesheet"
+            href="https://pyscript.net/latest/pyscript.css"
+        />
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
         <link rel="stylesheet" href="./assets/css/examples.css" />
-
-        <!-- This script tag bootstraps PyScript -->
-        <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
-
-        <!-- for splashscreen -->
-        <style>
-            #loading { outline: none; border: none; background: transparent }
-        </style>
-        <script type="module">
-            const loading = document.getElementById('loading');
-            addEventListener('py:ready', () => loading.close());
-            loading.showModal();
-        </script>
-
-        <title>PyScript Hello World</title>
-        <link rel="icon" type="image/png" href="./assets/favicon.png" />
     </head>
 
     <body>
-        <dialog id="loading">
-            <h1>Loading...</h1>
-        </dialog>
-
         <nav class="navbar" style="background-color: #000000">
             <div class="app-header">
                 <a href="/">
-                    <img src="./assets/logo.png" class="logo" />
+                    <img src="./logo.png" class="logo" />
                 </a>
-                <a class="title" href="" style="color: #f0ab3c">Hello World</a>
+                <a class="title" href="" style="color: #f0ab3c"
+                    >PyScript REPL</a
+                >
             </div>
         </nav>
-
         <section class="pyscript">
-            Hello world! <br />
-            This is the current date and time, as computed by Python:
-            <script type="py">
-                from pyscript import display
-                from datetime import datetime
-                now = datetime.now()
-                display(now.strftime("%m/%d/%Y, %H:%M:%S"))
-            </script>
+            <h1><b>PyScript REPL</b></h1>
+            Tip: press Shift-ENTER to evaluate a cell
+            <br />
+            <py-tutor">
+                
+                <div style="margin-right: 3rem">
+                    <py-repl id="my-repl" auto-generate="true"> </py-repl>
+                </div>
+            </py-tutor>
         </section>
     </body>
 </html>
