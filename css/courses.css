@@ -1,7 +1,12 @@
 div{
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 #main{
+    
     width: 100%;
     height: 100%;
     display: grid;
@@ -9,25 +14,33 @@ div{
                          "java hcj sth";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    font-family: Koulen-Regular, serif;
 }
 img{
     width: 30%;
 }
 #pajtonBLYAT{
     grid-area: pajtonBLYAT;
+    text-align: center;
 }
 #cepe{
     grid-area: cepe;
+    text-align: center;
 }
 #siszarp{
     grid-area: siszarp;
+    text-align: center;
 }
 #java{
     grid-area: java;
+    text-align: center;
 }
 #hcj{
     grid-area: hcj;
+    text-align: center;
+    
 }
 #smth{
     grid-area: sth;
+    text-align: center;
 }
