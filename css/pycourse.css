@@ -1,0 +1,63 @@
+div{
+    border: 1px solid black;
+}
+html,
+body{
+height: 100%;
+width: 100%;
+margin: 0;
+padding: 0;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    font-family: Koulen-Regular, serif;
+    background: #d0d0d0;
+    position: fixed;
+}
+#container{
+    width: 98%;
+    height: 98%;
+    padding: 1%;
+    display: grid;
+    grid-template-areas: "logo logo-text logo-text logo-text"
+                            "u1 u2 u3 u4"
+                            "b1 b1 b2 b2";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10% 80% 10%;
+}
+
+#logo{
+    grid-area: logo;
+    width: fit-content;
+}
+#logo img{
+    height: 100%;
+}
+#logo-text{
+    grid-area: logo-text;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    width: fit-content;
+
+}
+
+#u1{
+    grid-area: u1;
+}
+#u2{
+    grid-area: u2;
+}
+#u3{
+    grid-area: u3;
+}
+#u4{
+    grid-area: u4;
+}
+#b1{
+    grid-area: b1;
+}
+#b2{
+    grid-area: b2;
+}
