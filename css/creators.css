@@ -39,3 +39,7 @@ table{
     font-weight: 400;
     position: relative;
 }
+
+td{
+    cursor: pointer;
+}

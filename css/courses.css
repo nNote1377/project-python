@@ -1,51 +1,69 @@
-div{
+div {
     border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
-#main{
-    
+
+#main {
+
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-areas: "pajtonBLYAT cepe siszarp"
-                         "java hcj sth";
+                         "java hcj sth"
+                         "button button button";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     font-family: Koulen-Regular, serif;
 }
-img{
+
+img {
     width: 30%;
 }
-#pajtonBLYAT{
+#button{
+    grid-area: button;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+}
+#button:hover {
+    background-color: lightgray;
+}
+#pajtonBLYAT {
     grid-area: pajtonBLYAT;
     text-align: center;
     cursor: pointer;
     background-color: white;
 }
-#pajtonBLYAT:hover{
+
+#pajtonBLYAT:hover {
     background-color: lightgray;
 }
-#cepe{
+
+#cepe {
     grid-area: cepe;
     text-align: center;
 }
-#siszarp{
+
+#siszarp {
     grid-area: siszarp;
     text-align: center;
 }
-#java{
+
+#java {
     grid-area: java;
     text-align: center;
 }
-#hcj{
+
+#hcj {
     grid-area: hcj;
     text-align: center;
-    
+
 }
-#smth{
+
+#smth {
     grid-area: sth;
     text-align: center;
 }

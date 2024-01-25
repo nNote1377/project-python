@@ -21,7 +21,7 @@ font-family: Koulen-Regular, serif;
     height: 98%;
     padding: 1%;
     display: grid;
-    grid-template-areas: "logo logo logo-text logo-text"
+    grid-template-areas: "logo unit unit nothing"
                             "u1 u2 u3 u4"
                             "b1 b1 b2 b2";
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -30,10 +30,20 @@ font-family: Koulen-Regular, serif;
 
 #logo{
     grid-area: logo;
-    width: fit-content;
+    justify-self: center;
+    /*width: fit-content;*/
+
+}
+#unit{
+    grid-area: unit;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    /*width: fit-content;*/
 }
 #logo img{
     height: 100%;
+
 }
 #logo-text{
     grid-area: logo;
