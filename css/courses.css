@@ -22,6 +22,11 @@ img{
 #pajtonBLYAT{
     grid-area: pajtonBLYAT;
     text-align: center;
+    cursor: pointer;
+    background-color: white;
+}
+#pajtonBLYAT:hover{
+    background-color: lightgray;
 }
 #cepe{
     grid-area: cepe;

@@ -21,7 +21,7 @@ font-family: Koulen-Regular, serif;
     height: 98%;
     padding: 1%;
     display: grid;
-    grid-template-areas: "logo logo-text logo-text logo-text"
+    grid-template-areas: "logo logo logo-text logo-text"
                             "u1 u2 u3 u4"
                             "b1 b1 b2 b2";
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -36,14 +36,21 @@ font-family: Koulen-Regular, serif;
     height: 100%;
 }
 #logo-text{
-    grid-area: logo-text;
+    grid-area: logo;
     background-color: white;
     border-radius: 20px;
     text-align: center;
     width: fit-content;
-
+    margin-left: 10%;
 }
-
+#u1,#u2,#u3,#u4{
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+}
 #u1{
     grid-area: u1;
 }
@@ -61,4 +68,7 @@ font-family: Koulen-Regular, serif;
 }
 #b2{
     grid-area: b2;
+}
+#b1,#b2{
+    cursor: pointer;
 }

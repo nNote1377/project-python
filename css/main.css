@@ -37,6 +37,8 @@ div{
 }
 #a2{
     grid-area: a2;
+
+    font-size: 2.5em;
 }
 #a3{
     grid-area: a3;
@@ -80,7 +82,21 @@ div{
     background-color: white;
 }
 
-#a3, #a5, #a6{
+#a3,#a5,#a6{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 2em;
+}
+
+#a3, #a6{
     cursor: pointer;
+}
+#a3:hover{
+    background-color: lightgray;
+}
+#a6:hover{
+    background-color: lightgray;
 }
 
