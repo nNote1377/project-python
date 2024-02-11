@@ -1,5 +1,5 @@
 div{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 html,
 body{
@@ -87,6 +87,7 @@ font-family: Koulen-Regular, serif;
     text-align: center;
     width: 100%;
     cursor: pointer;
+    border: 1px solid black;
 }
 #b2{
     grid-area: b2;
@@ -106,4 +107,12 @@ font-family: Koulen-Regular, serif;
     text-align: center;
     height: fit-content;
 
+}
+
+#b1:hover,#b2:hover,#b3:hover,#return:hover,#sand:hover{
+    background-color: gray;
+}
+#b3{
+    width: 80%;
+    margin: auto;
 }

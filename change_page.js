@@ -8,7 +8,7 @@ function back() {
 }
 
 function next() {
-    if (page < 8) {
+    if (page < 5) {
         page++;
         document.getElementById("c").innerHTML = "<embed src='l" + page + ".html'>";
         showLesson();

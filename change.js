@@ -5,10 +5,11 @@ function value(){
     document.getElementById("t4").innerHTML = "Lesson " + parseInt(4 + u)+"<br>" + content[4 + u];
 }
 let u = 0;
-let content = ["nic tu nie ma","Installing Python","The fundamentals of python"," Data types, input/output information, operators","Basic Variables","Basic exam"]
+let content = ["nic tu nie ma","Installing Python","The fundamentals of python"," Data types, input/output information, operators","Basic Variables","Basic exam","Not yet","Not yet","Not yet"]
 value();
 
 function goNext() {
+    if(u<4)
     u += 4;
     value();
 }

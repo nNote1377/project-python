@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 1.1</title>
-<link rel="stylesheet" href="css/lessons.css">
-<link rel="stylesheet" href="css/font.css">
-    
+    <link rel="stylesheet" href="css/lessons.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/test.css">
+
 </head>
+
 <body>
     <form id="quizForm">
         <div class="question">
@@ -17,8 +20,7 @@
             <input type="radio" name="q1" value="c"> C. Functional, statically-typed, language<br>
             <input type="radio" name="q1" value="d"> D. Scripting, imperative, language<br>
         </div>
-    
-        
+
         <div class="question">
             <p>2. Who created Python?</p>
             <input type="radio" name="q2" value="a"> A. John Resig<br>
@@ -26,16 +28,78 @@
             <input type="radio" name="q2" value="c"> C. Larry Wall<br>
             <input type="radio" name="q2" value="d"> D. Brendan Eich<br>
         </div>
-    
-        <!-- Repeat for Questions 3 to 10 -->
-    
-        <!-- Add more questions here -->
-    
-        <button type="button" onclick="calculateScore()">Submit</button>
+
+        <div class="question">
+            <p>3. What are some of the built-in data types in Python?</p>
+            <input type="radio" name="q3" value="a"> A. str, int, float<br>
+            <input type="radio" name="q3" value="b"> B. list, tuple, dict<br>
+            <input type="radio" name="q3" value="c"> C. range, set, complex<br>
+            <input type="radio" name="q3" value="d"> D. All of the above<br>
+        </div>
+
+        <div class="question">
+            <p>4. Which command is used to print output in Python?</p>
+            <input type="radio" name="q4" value="a"> A. console.log()<br>
+            <input type="radio" name="q4" value="b"> B. document.write()<br>
+            <input type="radio" name="q4" value="c"> C. print()<br>
+            <input type="radio" name="q4" value="d"> D. println()<br>
+        </div>
+
+        <div class="question">
+            <p>5. What is the syntax to create a for loop in Python?</p>
+            <input type="radio" name="q5" value="a"> A. for (i = 0; i < 5; i++)<br>
+                <input type="radio" name="q5" value="b"> B. for i in range(5):<br>
+                <input type="radio" name="q5" value="c"> C. foreach i in range(5):<br>
+                <input type="radio" name="q5" value="d"> D. repeat(5, i++)<br>
+        </div>
+
+        <div class="question">
+            <p>6. What is the purpose of the 'elif' keyword in Python?</p>
+            <input type="radio" name="q6" value="a"> A. To start a new loop<br>
+            <input type="radio" name="q6" value="b"> B. To handle another condition if the previous ones are not met<br>
+            <input type="radio" name="q6" value="c"> C. To end the program<br>
+            <input type="radio" name="q6" value="d"> D. To print output<br>
+        </div>
+
+        <div class="question">
+            <p>7. Which library is used for mathematical operations in Python?</p>
+            <input type="radio" name="q7" value="a"> A. math<br>
+            <input type="radio" name="q7" value="b"> B. random<br>
+            <input type="radio" name="q7" value="c"> C. sys<br>
+            <input type="radio" name="q7" value="d"> D. time<br>
+        </div>
+
+        <div class="question">
+            <p>8. What does the 'import' keyword do in Python?</p>
+            <input type="radio" name="q8" value="a"> A. Export data<br>
+            <input type="radio" name="q8" value="b"> B. Import libraries<br>
+            <input type="radio" name="q8" value="c"> C. Create functions<br>
+            <input type="radio" name="q8" value="d"> D. Define variables<br>
+        </div>
+
+        <div class="question">
+            <p>9. Which of the following is NOT a valid variable name in Python?</p>
+            <input type="radio" name="q9" value="a"> A. my_variable<br>
+            <input type="radio" name="q9" value="b"> B. 123variable<br>
+            <input type="radio" name="q9" value="c"> C. _my_variable<br>
+            <input type="radio" name="q9" value="d"> D. MY_VARIABLE<br>
+        </div>
+
+        <div class="question">
+            <p>10. What is the result of the expression 3 * 'abc'?</p>
+            <input type="radio" name="q10" value="a"> A. 9<br>
+            <input type="radio" name="q10" value="b"> B. 'abcabcabc'<br>
+            <input type="radio" name="q10" value="c"> C. Error<br>
+            <input type="radio" name="q10" value="d"> D. 3abc<br>
+        </div>
+        
+        <div class="submit" onclick="calculateScore()">Submit</div>
+        
     </form>
-    
-    <div id="result"></div> 
-    
+
+    <div id="result"></div>
+
     <script src="test.js"></script>
 </body>
+
 </html>

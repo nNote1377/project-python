@@ -1,0 +1,33 @@
+p{
+    font-size: 3rem;
+}
+.question{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.submit{
+   height: 10%;
+   width:20%;
+   background-color: lightgray;
+   justify-self: center;
+   border-radius: 20px;
+   text-align: center;
+   font-size: 2rem;
+   margin: auto;
+   cursor: pointer;
+}
+.submit:hover{
+    background-color: gray;
+}
+#result{
+    font-size: 3rem;
+    text-align: center;
+    margin: auto;
+    background-color: lightgray;
+    border-radius: 20px;
+    height: 10%;
+    width:20%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}

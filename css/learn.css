@@ -1,5 +1,5 @@
 div{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 html,
 body{
@@ -97,4 +97,8 @@ embed{
     width: 50%;
     text-align: center;
     height: fit-content;
+}
+
+#b1:hover,#b2:hover,#b3:hover,#return:hover{
+    background-color: gray;
 }

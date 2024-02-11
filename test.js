@@ -1,6 +1,6 @@
 function calculateScore() {
     var score = 0;
-    var answers = ["a", "b", "a", "b", "a", "a", "d", "a", "b", "a"]; // Array of correct answers
+    var answers = ["a", "b", "d", "c", "b", "b", "a", "b", "b", "b"];
 
     // Loop through each question
     for (var i = 1; i <= 10; i++) {
