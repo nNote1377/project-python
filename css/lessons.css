@@ -32,3 +32,63 @@ h1{padding: 0;margin: 0;}
     
     
 }
+img{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+table{
+    text-align: center;
+    margin: auto;
+    font-size: 2rem;
+}
+td{
+    width: 50%;
+}
+.pythonphoto{
+    width: 30%;
+}
+.Guido{
+    border-radius: 9rem;
+}
+span{
+    font-size: 3rem;
+}
+code{
+    font-family: 'Consolas';
+}
+.code1
+{
+    margin: auto;
+    background-color: #1f2022;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 2%;
+    font-size: 1.8rem;
+    text-align: left;
+    font-family: 'Consolas';
+    width: 60%;
+    justify-self: center;
+    height: 100%;
+}
+#fun
+{ 
+    color: rgb(237, 101, 203); 
+}
+#comment
+{ 
+    color: #5c5f64; 
+}
+#content
+{ 
+    color: #3e9249; 
+}
+#variables
+{ 
+    color: #14aab8;
+}
+#char
+{
+    color: white;
+}

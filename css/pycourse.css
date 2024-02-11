@@ -23,7 +23,7 @@ font-family: Koulen-Regular, serif;
     display: grid;
     grid-template-areas: "logo unit unit return"
                             "u1 u2 u3 u4"
-                            "b1 n2 n3 b2";
+                            "b1 sand sand b2";
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 10% 80% 10%;
 }
@@ -79,7 +79,7 @@ font-family: Koulen-Regular, serif;
 #b1{
     grid-area: b1;
 }
-#b1,#b2,#b3,#return{   
+#b1,#b2,#b3,#return,#sand{   
     background-color: white;
     border-radius: 20px;
     height: fit-content;
@@ -97,4 +97,13 @@ font-family: Koulen-Regular, serif;
     width: 50%;
     text-align: center;
     height: fit-content;
+}
+#sand
+{
+    grid-area: sand;
+    justify-self: center;
+    width: 50%;
+    text-align: center;
+    height: fit-content;
+
 }
