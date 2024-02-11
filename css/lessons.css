@@ -55,7 +55,7 @@ span{
     font-size: 3rem;
 }
 code{
-    font-family: 'Consolas';
+    font-family: Koulen-Regular, serif;
 }
 .code1
 {
@@ -67,7 +67,6 @@ code{
     padding: 2%;
     font-size: 1.8rem;
     text-align: left;
-    font-family: 'Consolas';
     width: 60%;
     justify-self: center;
     height: 100%;
@@ -91,4 +90,32 @@ code{
 #char
 {
     color: white;
+}
+#javascript
+{
+    color: rgb(255, 201, 39);
+}
+#css
+{
+    color: #38a5ff;
+}
+#python
+{
+    color: #5d82ba;
+}
+#cpp
+{
+    color: #38a5ff;
+}
+#csz
+{
+    color: #7914b8;
+}
+#c
+{
+    color: #d833ee;
+}
+#java
+{
+    color: #ff0000;
 }

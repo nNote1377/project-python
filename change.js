@@ -5,7 +5,7 @@ function value(){
     document.getElementById("t4").innerHTML = "Lesson " + parseInt(4 + u)+"<br>" + content[4 + u];
 }
 let u = 0;
-let content = ["nic tu nie ma","Installing Python","The fundamentals of python"," Data types, input/output information, operators","Basic Variables"]
+let content = ["nic tu nie ma","Installing Python","The fundamentals of python"," Data types, input/output information, operators","Basic Variables","Basic exam"]
 value();
 
 function goNext() {
@@ -25,5 +25,5 @@ function set(x){
 }
 
 function goSand(){
-    window.open("test.html", "_blank");
+    window.open("sandbox.html", "_blank");
 }

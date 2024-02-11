@@ -40,4 +40,3 @@ function goPYcharm() {
 function goPY() {
     window.open("https://www.python.org/downloads/", "_blank");
 }
-
