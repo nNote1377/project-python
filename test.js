@@ -2,7 +2,9 @@ function calculateScore() {
     var score = 0;
     var answers = ["a", "b", "d", "c", "b", "b", "a", "b", "b", "b"];
 
-    // Loop through each question
+   
+    
+
     for (var i = 1; i <= 10; i++) {
         var selectedOption = document.querySelector('input[name="q' + i + '"]:checked');
         if (selectedOption) {
@@ -16,3 +18,4 @@ function calculateScore() {
     var resultDiv = document.getElementById('result');
     resultDiv.innerHTML = 'Your score is: ' + score + ' out of 10';
 }
+
