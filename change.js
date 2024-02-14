@@ -26,5 +26,5 @@ function set(x){
 }
 
 function goSand(){
-    window.open("sandbox.html", "_blank");
+    window.open("sandbox.html");
 }
