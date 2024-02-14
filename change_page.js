@@ -2,7 +2,7 @@
 function back() {
     if (page > 1) {
         page--;
-        document.getElementById("c").innerHTML = "<embed src='l" + page + ".html'>";
+        document.getElementById("c").innerHTML = "<embed src='lesson" + page + ".html'>";
         showLesson();
     }
 }
@@ -10,7 +10,7 @@ function back() {
 function next() {
     if (page < 5) {
         page++;
-        document.getElementById("c").innerHTML = "<embed src='l" + page + ".html'>";
+        document.getElementById("c").innerHTML = "<embed src='lesson" + page + ".html'>";
         showLesson();
     }
 }
@@ -22,12 +22,16 @@ function showLesson() {
 
 function setPage(p) {
     p = parseInt(p);
-    window.location = "learn.html?" + p;
+    if (p <= 5) {
+        window.location = "learn.html?" + p;
+    }
 }
 
 
 let page = window.location.search.split("?")[1];
-document.getElementById("c").innerHTML = "<embed src='l" + page + ".html'>";
+if (page <= 5) {
+    document.getElementById("c").innerHTML = "<embed src='lesson" + page + ".html'>";
+}
 showLesson();
 function goVSC() {
     window.open("https://code.visualstudio.com/", "_blank");
